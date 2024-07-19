@@ -26,13 +26,17 @@
     ```sh
     mvn clean install
     ```
-2. Перейдите в директорию проекта для producer:
+4. Перейдите в директорию проекта для producer:
     ```sh
     cd consumer/
     ```
-3. Соберите проект:
+5. Соберите проект:
     ```sh
     mvn clean install
+    ```
+5. Запустите docker:
+    ```sh
+    docker-compose up
     ```
 
 ## Конфигурация
@@ -53,3 +57,5 @@ DATABASE_USER=
 
 Metric Producer создан для того, чтобы отправлять данные о системе и ошибках в топик metrics-topic
 Metric Consumer создан для того, чтобы принимать и анализировать данные, высланные в metric-topic
+
+Каждые 5 секунд metric producer отправляет данные в metric consumer
