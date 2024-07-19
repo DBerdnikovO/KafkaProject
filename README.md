@@ -12,6 +12,7 @@
 - Java 11 или выше
 - Apache Kafka
 - Spring Boot
+- Postgres DB
 
 ## Установка
 1. Клонируйте репозиторий:
